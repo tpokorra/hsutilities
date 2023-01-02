@@ -1,4 +1,5 @@
 import os, subprocess
+import hsutilities.users as hsusers
 
 def get_subdomains_of_domain(user, domain):
 
@@ -23,12 +24,12 @@ def get_domains_of_user(user):
 
 def get_domains_of_pac(pac):
 
-    result = []
+    result = {}
 
-    result = result.extend(get_domains_of_user(pac))
-    users = get_users_of_pac(pac)
+    result = get_domains_of_user(pac)
+    users = hsusers.get_users_of_pac(pac)
     for user in (users or []):
-        result = result.extend(get_domains_of_user(f"{pac}-{user}"))
+        result.update(get_domains_of_user(f"{pac}-{user}"))
 
     return result
 

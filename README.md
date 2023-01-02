@@ -18,8 +18,9 @@ Installing:
 A simple example:
 
 ```python
-import hsutilities as hs
+from hsutilities import domains as hsdomains
+from hsutilities import users as hsusers
 
-pac = hs.users.get_current_pac()
-domains = hs.domains.get_domains_of_user(pac)
+pac = hsusers.get_current_pac()
+domains = hsdomains.get_domains_of_user(pac)
 ```
