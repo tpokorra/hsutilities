@@ -11,7 +11,7 @@ setup(
     url="https://github.com/tpokorra/hsutilities",
     author="Timotheus Pokorra",
     author_email="timotheus.pokorra@solidcharity.com",
-    version='0.1',
+    version='0.1.1',
     license="New BSD License",
     packages=find_packages(),
     zip_safe=False,

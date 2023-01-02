@@ -1,7 +1,7 @@
 import getpass
 import os
 
-def get_current_pac(pac):
+def get_current_pac():
     user = getpass.getuser()
     return user.split('-')[0]
 

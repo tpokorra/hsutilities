@@ -13,12 +13,12 @@ Getting started
 
 Installing:
 
-    pip install hostsharing_utilities
+    pip install hsutilities
 
 A simple example:
 
 ```python
-import hostsharing_utiltiies as hs
+import hsutilities as hs
 
 pac = hs.users.get_current_pac()
 domains = hs.domains.get_domains_of_user(pac)
