@@ -3,7 +3,7 @@ import hsutilities.users as hsusers
 
 def get_subdomains_of_domain(user, domain):
 
-    path = "~/doms/{domain}/subs-ssl"
+    path = f"~/doms/{domain}/subs-ssl"
     stream = os.popen(f'sudo -u {user} -s /bin/bash -c "if [ -d {path} ]; then ls -1 {path}; fi"')
     subdomains = stream.read()
     if subdomains:
