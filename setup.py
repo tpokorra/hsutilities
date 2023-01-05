@@ -17,8 +17,8 @@ setup(
     zip_safe=False,
     include_package_data=True,
     install_requires=[
-        'git+git://dev.hostsharing.net/ansible/hs.admin.api.git#egg=hs.admin.api',
-    ],
+         'hs.admin.api',
+    ],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Console",
