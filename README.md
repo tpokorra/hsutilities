@@ -20,7 +20,11 @@ A simple example:
 ```python
 from hsutilities import domains as hsdomains
 from hsutilities import users as hsusers
+from hsutilities import admin as hsadmin
 
 pac = hsusers.get_current_pac()
 domains = hsdomains.get_domains_of_user(pac)
+
+api = hsadmin.get_api(pac)
+api.domain.add(set = {'name': 'example.org', 'user': 'xyz00-example'})
 ```

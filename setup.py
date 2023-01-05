@@ -11,11 +11,14 @@ setup(
     url="https://github.com/tpokorra/hsutilities",
     author="Timotheus Pokorra",
     author_email="timotheus.pokorra@solidcharity.com",
-    version='0.1.3',
+    version='0.1.4',
     license="New BSD License",
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,
+    install_requires=[
+        'git+git://dev.hostsharing.net/ansible/hs.admin.api.git#egg=hs.admin.api',
+    ],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Console",
